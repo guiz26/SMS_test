@@ -1,5 +1,5 @@
 <?php
-// config param
+// config params
 const PARAMS = array(
         'LOGIN' => '',
         'PASSWORD' => ''
