@@ -1,0 +1,5 @@
+<?php
+const PARAMS = array(
+        'LOGIN' => '',
+        'PASSWORD' => ''
+    );

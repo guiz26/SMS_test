@@ -1,0 +1,39 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$white : #FAF9F9;
+$green : #89B0AE;
+$text-light-black: #444;
+$title : #5CA4A9;
+
+body{
+  font-family: 'Fira Sans', sans-serif;
+  background: $white;
+  color: $text-light-black;
+}
+
+header{
+  background: $green;
+  color: $white;
+  padding: 10px 0;
+  .navbar-light .navbar-brand {
+      color: $white !important;
+  }
+}
+
+.body{
+  padding-top: 20px;
+  
+  .entreprise {
+    color: $title;
+  }
+
+  .exp {
+    td {
+      vertical-align: top;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
