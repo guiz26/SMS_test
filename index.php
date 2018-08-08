@@ -11,7 +11,9 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="navbar-header">
             <a class="navbar-brand" href="#">SMS</a>
+        </div>
         </nav>
     </header>
     <div class="body">
@@ -28,6 +30,9 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-6 text-center"><a href="https://github.com/guiz26/SMS_test" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
             </div>
         </div>
     </div>
