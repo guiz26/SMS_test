@@ -26,4 +26,10 @@ if (isset($_POST['phoneInput']) && isset($_POST['messageInput'])) {
     // Pour debug de message
     $sms = new SMS;
     var_dump($sms->connexion->get_status($_GET['id_message']));
+} elseif (isset($_GET['cancel_message'])) {
+    $sms = new SMS;
+    var_dump($sms->connexion->cancel_message($_GET['cancel_message']));
+} elseif (isset($_GET['numberclean'])) {
+    $sms = new SMS;
+    var_dump($sms->connexion->clean_number($_GET['numberclean']));
 }

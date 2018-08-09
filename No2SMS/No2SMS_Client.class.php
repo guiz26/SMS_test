@@ -389,6 +389,10 @@ class No2SMS_Client {
      *   The RPC call's answer. If a connection or protocol error arise,
      *   No2SMS_Client->_error() is called and it will throw an exception.
      */
+
+    public function clean_number($number){
+        return $this->_RPC('clean_number', $this->user, $this->password, $number);
+    }
     protected function _RPC(/* ... */) {
         /*
          * call_user_func_array() and func_get_args() are slow, however the

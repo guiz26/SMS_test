@@ -30,8 +30,10 @@
                     return array('success' => 'Message envoyé avec succès');
                 } elseif ($response[0][1]['sent_status'] == 9) {
                     return array('success' => 'Message envoyé avec succès');
-                } else {
+                } else if (is_numeric($response[0][1]['sent_status'])){
                     return array('warning' => 'Statut du message : '.$response[0][1]['sent_status_text']);
+                } else if ($response[0][0]) {
+                    return array('error' => 'Statut du message : '.$response[0][0]);
                 }
 
                 return array('error' => 'Statut du sms non dispo');
