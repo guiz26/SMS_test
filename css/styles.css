@@ -6326,10 +6326,12 @@ header {
 
 .body {
   padding-top: 20px; }
-  .body .entreprise {
-    color: #5CA4A9; }
-  .body .exp td {
-    vertical-align: top; }
 
-ul {
-  list-style: none; }
+.a {
+  color: #89B0AE; }
+
+.alert-success, .alert-danger {
+  display: none; }
+
+#result {
+  min-height: 70px; }

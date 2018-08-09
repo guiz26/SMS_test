@@ -22,18 +22,13 @@ header{
 
 .body{
   padding-top: 20px;
-  
-  .entreprise {
-    color: $title;
-  }
-
-  .exp {
-    td {
-      vertical-align: top;
-    }
-  }
 }
-
-ul {
-  list-style: none;
+.a {
+  color: $green;
+}
+.alert-success, .alert-danger {
+  display: none;
+}
+#result {
+  min-height: 70px;
 }
