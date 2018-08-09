@@ -5,12 +5,13 @@
     class SMS {
         public $connexion;
         public $statut;
-        function __construct(){
+        function __construct() {
             $this->connexion = $client = new No2SMS_Client(PARAMS['LOGIN'], base64_decode(PARAMS['PASSWORD']));
             $this->statut = $this->connexion->auth();
         }
 
-        public function send($phone, $message){
+        public function send($phone, $message) {
+            // Il possible d'utiliser selon la doc clean_number via l'api et XML-RPC
             $response = $this->connexion->send_message($phone, $message);
             if (!empty($response) && isset($response[0][2])) {
                 return $response[0][2]; // id du message
