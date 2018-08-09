@@ -23,12 +23,11 @@ header{
 .body{
   padding-top: 20px;
 }
-.a {
-  color: $green;
-}
-.alert-success, .alert-danger {
+
+.alert-success, .alert-danger, .alert-warning {
   display: none;
 }
+
 #result {
   min-height: 70px;
 }

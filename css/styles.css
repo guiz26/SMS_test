@@ -6327,10 +6327,7 @@ header {
 .body {
   padding-top: 20px; }
 
-.a {
-  color: #89B0AE; }
-
-.alert-success, .alert-danger {
+.alert-success, .alert-danger, .alert-warning {
   display: none; }
 
 #result {
